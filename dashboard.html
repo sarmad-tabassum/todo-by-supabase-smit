@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <div class="dashboard-box">
+      <div class="dashboard-header">
+        <h1>Dashboard</h1>
+        <button id="logout">Logout</button>
+      </div>
+
+      <h2>Todo List</h2>
+
+      <div class="todo-input-section">
+        <input type="text" id="inp-text" placeholder="Type Here" />
+        <div class="todo-buttons">
+          <button id="add-todo">Add</button>
+          <button onclick="clearAll()">Clear All</button>
+        </div>
+      </div>
+
+      <ul id="todo-list"></ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
