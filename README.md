@@ -31,8 +31,25 @@ A lightweight, modern, and high-performance Todo web application that leverages 
 
 ### 📦 Local Installation & Setup
 
+
 Follow these exact steps to clone the project and run it on your local machine:
 
 1. **Clone the Repository:**
 ```bash
    git clone [https://github.com/sarmad-tabassum/todo-by-supabase-smit.git](https://github.com/sarmad-tabassum/todo-by-supabase-smit.git)
+   
+   Navigate into the Project Directory:
+
+Bash
+   cd todo-by-supabase-smit
+Configure Environment Variables:
+Create a configuration object or initialization file in your scripts directory and hook up your own Supabase project tokens:
+
+JavaScript
+   const supabaseUrl = 'YOUR_SUPABASE_PROJECT_URL';
+   const supabaseKey = 'YOUR_SUPABASE_ANON_KEY';
+Launch the Application:
+Open the index.html file directly in your browser, or use the Live Server extension in VS Code for hot-reloading execution.
+
+📄 License
+      This project is open-source and available under the MIT License. Feel free to fork, modify, and optimize it!
